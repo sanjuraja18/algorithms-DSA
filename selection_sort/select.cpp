@@ -9,7 +9,7 @@ void select(int arr[], int s){
                 chotu=j;
             }
         }
-        if(chotu!=1){
+        if(chotu!=i){
             int tem;
             tem=arr[chotu];
             arr[chotu]=arr[i];
@@ -19,7 +19,7 @@ void select(int arr[], int s){
 }
 
 int main(){
-    int arr[]={4,2,3,6,1};
+    int arr[]={1,4,2,9,6};
     int s=sizeof(arr)/sizeof(arr[0]);
     for(int i=0; i<s; i++){
         cout<<arr[i]<<"\t";
